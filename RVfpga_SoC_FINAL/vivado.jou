@@ -1,0 +1,208 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Oct 10 08:59:51 2024
+# Process ID: 3388
+# Current directory: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6460 D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.xpr
+# Log file: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/vivado.log
+# Journal file: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.xpr
+update_compile_order -fileset sources_1
+create_bd_design "swerv_soc"
+update_compile_order -fileset sources_1
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd}
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd}
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi2wb_intcon_wrapper:1.0 axi2wb_intcon_wrapper_0
+endgroup
+export_ip_user_files -of_objects  [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -reset -force -quiet
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd
+file delete -force D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc
+update_files -from_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v -to_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/design_1swerv_soc_wrapper.v -filesets [get_filesets *]
+add_files {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/mem_1.init D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/sw/boot_main.mem D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_core.init}
+add_files {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/sync.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/syscon_wrapper.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/registers.svh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_pkg.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/binary_to_gray.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/rvfpga.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/cdc_fifo_gray.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_top.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/counter.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/bscan_tap.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/typedef.svh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/delta_counter.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/clk_gen_nexys.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_cdc.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_core.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/assign.svh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/spill_register.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/gray_to_binary.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/sw/boot_main.vh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/dpram64.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/bootrom_wrapper.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_intf.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/swervolf_syscon.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v}
+create_bd_design "swerv_soc"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi2wb_intcon_wrapper:1.0 axi2wb_intcon_wrapper_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:swerv_wrapper_verilog:1.0 swerv_wrapper_verilog_0
+endgroup
+set_property location {1 48 -72} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {0.5 -13 -105} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -10 -96} [get_bd_cells swerv_wrapper_verilog_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:wb_gpio_wrapper:1.0 wb_gpio_wrapper_0
+endgroup
+set_property location {3.5 1161 169} [get_bd_cells wb_gpio_wrapper_0]
+create_bd_cell -type module -reference bootrom_wrapper bootrom_wrapper_0
+create_bd_cell -type module -reference SevSegDisplays_Controller SevSegDisplays_Contr_0
+delete_bd_objs [get_bd_cells SevSegDisplays_Contr_0]
+save_bd_design
+create_bd_cell -type module -reference syscon_wrapper syscon_wrapper_0
+set_property location {4 1317 480} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {4 1287 614} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {4 1322 208} [get_bd_cells syscon_wrapper_0]
+set_property location {0.5 53 -13} [get_bd_cells swerv_wrapper_verilog_0]
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd}
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+current_bd_design design_1swerv_soc
+set tmpCopyObjs [concat  [get_bd_cells {axi2wb_intcon_wrapper_0 syscon_wrapper_0 bootrom_wrapper_0 swerv_wrapper_verilog_0 wb_gpio_wrapper_0}] [get_bd_intf_ports {ram}] [get_bd_ports {rst_0 i_ram_init_done_0 i_ram_init_error_0 dmi_reg_wr_en_0 dmi_reg_en_0 clk_0 dmi_hard_reset_0 dmi_reg_rdata_0 dmi_reg_wdata_0 bidir Digits_Bits_0 AN_0 extintsrc_req_0 dmi_reg_addr_0}] [get_bd_intf_nets {axi2wb_intcon_wrapper_0_o_ram_axi4 swerv_wrapper_verilog_0_ifu_axi swerv_wrapper_verilog_0_lsu_axi swerv_wrapper_verilog_0_sb_axi}] [get_bd_nets {wb_gpio_wrapper_0_bidir wb_gpio_wrapper_0_wb_err_o axi2wb_intcon_wrapper_0_wb_gpio_cyc_o axi2wb_intcon_wrapper_0_wb_sys_dat_o syscon_wrapper_0_AN rst_0_1 syscon_wrapper_0_o_nmi_int syscon_wrapper_0_o_wb_rdt syscon_wrapper_0_o_wb_ack axi2wb_intcon_wrapper_0_wb_sys_adr_o extintsrc_req_0_1 syscon_wrapper_0_o_nmi_vec dmi_hard_reset_0_1 clk_0_1 wb_gpio_wrapper_0_wb_ack_o axi2wb_intcon_wrapper_0_wb_gpio_dat_o axi2wb_intcon_wrapper_0_wb_rom_adr_o dmi_reg_wdata_0_1 bootrom_wrapper_0_o_wb_rdt axi2wb_intcon_wrapper_0_wb_rom_sel_o axi2wb_intcon_wrapper_0_wb_rom_we_o i_ram_init_done_0_1 axi2wb_intcon_wrapper_0_wb_sys_stb_o dmi_reg_addr_0_1 axi2wb_intcon_wrapper_0_wb_rom_stb_o swerv_wrapper_verilog_0_dmi_reg_rdata wb_gpio_wrapper_0_wb_dat_o axi2wb_intcon_wrapper_0_wb_gpio_stb_o axi2wb_intcon_wrapper_0_wb_gpio_sel_o axi2wb_intcon_wrapper_0_wb_gpio_adr_o axi2wb_intcon_wrapper_0_wb_sys_sel_o axi2wb_intcon_wrapper_0_wb_rom_dat_o i_ram_init_error_0_1 axi2wb_intcon_wrapper_0_wb_gpio_we_o syscon_wrapper_0_Digits_Bits dmi_reg_wr_en_0_1 dmi_reg_en_0_1 axi2wb_intcon_wrapper_0_wb_sys_cyc_o axi2wb_intcon_wrapper_0_wb_rom_cyc_o syscon_wrapper_0_o_timer_irq axi2wb_intcon_wrapper_0_wb_sys_we_o wb_gpio_wrapper_0_wb_inta_o}]]
+current_bd_design swerv_soc
+copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs
+delete_bd_objs [get_bd_cells axi2wb_intcon_wrapper_0]
+delete_bd_objs [get_bd_cells wb_gpio_wrapper_0]
+delete_bd_objs [get_bd_cells syscon_wrapper_0]
+delete_bd_objs [get_bd_cells swerv_wrapper_verilog_0]
+delete_bd_objs [get_bd_cells bootrom_wrapper_0]
+current_bd_design design_1swerv_soc
+set tmpCopyObjs [concat  [get_bd_cells {axi2wb_intcon_wrapper_0 syscon_wrapper_0 bootrom_wrapper_0 swerv_wrapper_verilog_0 wb_gpio_wrapper_0}] [get_bd_intf_ports {ram}] [get_bd_ports {rst_0 i_ram_init_done_0 i_ram_init_error_0 dmi_reg_wr_en_0 dmi_reg_en_0 clk_0 dmi_hard_reset_0 dmi_reg_rdata_0 dmi_reg_wdata_0 bidir Digits_Bits_0 AN_0 extintsrc_req_0 dmi_reg_addr_0}] [get_bd_intf_nets {axi2wb_intcon_wrapper_0_o_ram_axi4 swerv_wrapper_verilog_0_ifu_axi swerv_wrapper_verilog_0_lsu_axi swerv_wrapper_verilog_0_sb_axi}] [get_bd_nets {wb_gpio_wrapper_0_bidir wb_gpio_wrapper_0_wb_err_o axi2wb_intcon_wrapper_0_wb_gpio_cyc_o axi2wb_intcon_wrapper_0_wb_sys_dat_o syscon_wrapper_0_AN rst_0_1 syscon_wrapper_0_o_nmi_int syscon_wrapper_0_o_wb_rdt syscon_wrapper_0_o_wb_ack axi2wb_intcon_wrapper_0_wb_sys_adr_o extintsrc_req_0_1 syscon_wrapper_0_o_nmi_vec dmi_hard_reset_0_1 clk_0_1 wb_gpio_wrapper_0_wb_ack_o axi2wb_intcon_wrapper_0_wb_gpio_dat_o axi2wb_intcon_wrapper_0_wb_rom_adr_o dmi_reg_wdata_0_1 bootrom_wrapper_0_o_wb_rdt axi2wb_intcon_wrapper_0_wb_rom_sel_o axi2wb_intcon_wrapper_0_wb_rom_we_o i_ram_init_done_0_1 axi2wb_intcon_wrapper_0_wb_sys_stb_o dmi_reg_addr_0_1 axi2wb_intcon_wrapper_0_wb_rom_stb_o swerv_wrapper_verilog_0_dmi_reg_rdata wb_gpio_wrapper_0_wb_dat_o axi2wb_intcon_wrapper_0_wb_gpio_stb_o axi2wb_intcon_wrapper_0_wb_gpio_sel_o axi2wb_intcon_wrapper_0_wb_gpio_adr_o axi2wb_intcon_wrapper_0_wb_sys_sel_o axi2wb_intcon_wrapper_0_wb_rom_dat_o i_ram_init_error_0_1 axi2wb_intcon_wrapper_0_wb_gpio_we_o syscon_wrapper_0_Digits_Bits dmi_reg_wr_en_0_1 dmi_reg_en_0_1 axi2wb_intcon_wrapper_0_wb_sys_cyc_o axi2wb_intcon_wrapper_0_wb_rom_cyc_o syscon_wrapper_0_o_timer_irq axi2wb_intcon_wrapper_0_wb_sys_we_o wb_gpio_wrapper_0_wb_inta_o}]]
+current_bd_design swerv_soc
+copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs
+undo
+undo
+current_bd_design [get_bd_designs swerv_soc]
+undo
+current_bd_design [get_bd_designs swerv_soc]
+startgroup
+delete_bd_objs [get_bd_intf_nets axi2wb_intcon_wrapper_0_o_ram_axi4] [get_bd_intf_nets swerv_wrapper_verilog_0_ifu_axi] [get_bd_intf_nets swerv_wrapper_verilog_0_lsu_axi] [get_bd_intf_nets swerv_wrapper_verilog_0_sb_axi]
+delete_bd_objs [get_bd_nets wb_gpio_wrapper_0_wb_err_o] [get_bd_nets wb_gpio_wrapper_0_bidir] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_dat_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_cyc_o] [get_bd_nets syscon_wrapper_0_o_wb_rdt] [get_bd_nets syscon_wrapper_0_o_wb_ack] [get_bd_nets syscon_wrapper_0_o_nmi_int] [get_bd_nets syscon_wrapper_0_AN] [get_bd_nets rst_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_adr_o] [get_bd_nets syscon_wrapper_0_o_nmi_vec] [get_bd_nets extintsrc_req_0_1] [get_bd_nets wb_gpio_wrapper_0_wb_ack_o] [get_bd_nets dmi_hard_reset_0_1] [get_bd_nets clk_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_adr_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_dat_o] [get_bd_nets dmi_reg_wdata_0_1] [get_bd_nets bootrom_wrapper_0_o_wb_rdt] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_we_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_sel_o] [get_bd_nets i_ram_init_done_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_stb_o] [get_bd_nets dmi_reg_addr_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_stb_o] [get_bd_nets wb_gpio_wrapper_0_wb_dat_o] [get_bd_nets swerv_wrapper_verilog_0_dmi_reg_rdata] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_sel_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_dat_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_stb_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_sel_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_adr_o] [get_bd_nets i_ram_init_error_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_we_o] [get_bd_nets syscon_wrapper_0_Digits_Bits] [get_bd_nets dmi_reg_wr_en_0_1] [get_bd_nets dmi_reg_en_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_cyc_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_cyc_o] [get_bd_nets syscon_wrapper_0_o_timer_irq] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_we_o] [get_bd_nets wb_gpio_wrapper_0_wb_inta_o]
+delete_bd_objs [get_bd_intf_ports ram]
+delete_bd_objs [get_bd_ports i_ram_init_done_0] [get_bd_ports i_ram_init_error_0] [get_bd_ports rst_0] [get_bd_ports dmi_reg_wr_en_0] [get_bd_ports dmi_reg_en_0] [get_bd_ports clk_0] [get_bd_ports dmi_hard_reset_0] [get_bd_ports dmi_reg_rdata_0] [get_bd_ports dmi_reg_wdata_0] [get_bd_ports bidir] [get_bd_ports Digits_Bits_0] [get_bd_ports AN_0] [get_bd_ports extintsrc_req_0] [get_bd_ports dmi_reg_addr_0]
+delete_bd_objs [get_bd_cells axi2wb_intcon_wrapper_1] [get_bd_cells syscon_wrapper_1] [get_bd_cells bootrom_wrapper_1] [get_bd_cells swerv_wrapper_verilog_1] [get_bd_cells wb_gpio_wrapper_1]
+endgroup
+current_bd_design design_1swerv_soc
+set tmpCopyObjs [concat  [get_bd_cells {axi2wb_intcon_wrapper_0 syscon_wrapper_0 bootrom_wrapper_0 swerv_wrapper_verilog_0 wb_gpio_wrapper_0}] [get_bd_intf_ports {ram}] [get_bd_ports {rst_0 i_ram_init_done_0 i_ram_init_error_0 dmi_reg_wr_en_0 dmi_reg_en_0 clk_0 dmi_hard_reset_0 dmi_reg_rdata_0 dmi_reg_wdata_0 bidir Digits_Bits_0 AN_0 extintsrc_req_0 dmi_reg_addr_0}] [get_bd_intf_nets {axi2wb_intcon_wrapper_0_o_ram_axi4 swerv_wrapper_verilog_0_ifu_axi swerv_wrapper_verilog_0_lsu_axi swerv_wrapper_verilog_0_sb_axi}] [get_bd_nets {wb_gpio_wrapper_0_bidir wb_gpio_wrapper_0_wb_err_o axi2wb_intcon_wrapper_0_wb_gpio_cyc_o axi2wb_intcon_wrapper_0_wb_sys_dat_o syscon_wrapper_0_AN rst_0_1 syscon_wrapper_0_o_nmi_int syscon_wrapper_0_o_wb_rdt syscon_wrapper_0_o_wb_ack axi2wb_intcon_wrapper_0_wb_sys_adr_o extintsrc_req_0_1 syscon_wrapper_0_o_nmi_vec dmi_hard_reset_0_1 clk_0_1 wb_gpio_wrapper_0_wb_ack_o axi2wb_intcon_wrapper_0_wb_gpio_dat_o axi2wb_intcon_wrapper_0_wb_rom_adr_o dmi_reg_wdata_0_1 bootrom_wrapper_0_o_wb_rdt axi2wb_intcon_wrapper_0_wb_rom_sel_o axi2wb_intcon_wrapper_0_wb_rom_we_o i_ram_init_done_0_1 axi2wb_intcon_wrapper_0_wb_sys_stb_o dmi_reg_addr_0_1 axi2wb_intcon_wrapper_0_wb_rom_stb_o swerv_wrapper_verilog_0_dmi_reg_rdata wb_gpio_wrapper_0_wb_dat_o axi2wb_intcon_wrapper_0_wb_gpio_stb_o axi2wb_intcon_wrapper_0_wb_gpio_sel_o axi2wb_intcon_wrapper_0_wb_gpio_adr_o axi2wb_intcon_wrapper_0_wb_sys_sel_o axi2wb_intcon_wrapper_0_wb_rom_dat_o i_ram_init_error_0_1 axi2wb_intcon_wrapper_0_wb_gpio_we_o syscon_wrapper_0_Digits_Bits dmi_reg_wr_en_0_1 dmi_reg_en_0_1 axi2wb_intcon_wrapper_0_wb_sys_cyc_o axi2wb_intcon_wrapper_0_wb_rom_cyc_o syscon_wrapper_0_o_timer_irq axi2wb_intcon_wrapper_0_wb_sys_we_o wb_gpio_wrapper_0_wb_inta_o}]]
+current_bd_design swerv_soc
+copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs
+undo
+undo
+current_bd_design [get_bd_designs swerv_soc]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi2wb_intcon_wrapper:1.0 axi2wb_intcon_wrapper_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:swerv_wrapper_verilog:1.0 swerv_wrapper_verilog_0
+endgroup
+set_property location {1 106 -167} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {0.5 -35 -177} [get_bd_cells swerv_wrapper_verilog_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:wb_gpio_wrapper:1.0 wb_gpio_wrapper_0
+endgroup
+set_property location {2.5 1256 -269} [get_bd_cells swerv_wrapper_verilog_0]
+create_bd_cell -type module -reference bootrom_wrapper bootrom_wrapper_0
+set_property location {3 940 -334} [get_bd_cells bootrom_wrapper_0]
+set_property location {3.5 1061 11} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {4 1049 356} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {0.5 -118 -89} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {4 969 -352} [get_bd_cells bootrom_wrapper_0]
+set_property location {3 1009 14} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {3 1082 307} [get_bd_cells wb_gpio_wrapper_0]
+create_bd_cell -type module -reference syscon_wrapper syscon_wrapper_0
+set_property location {4 1059 -67} [get_bd_cells syscon_wrapper_0]
+set_property location {1 -138 -130} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -132 -152} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -128 -150} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -132 -183} [get_bd_cells swerv_wrapper_verilog_0]
+connect_bd_intf_net [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_ifu_axi4] [get_bd_intf_pins swerv_wrapper_verilog_0/ifu_axi]
+connect_bd_intf_net [get_bd_intf_pins swerv_wrapper_verilog_0/lsu_axi] [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_lsu_axi4]
+connect_bd_intf_net [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_sb_axi4] [get_bd_intf_pins swerv_wrapper_verilog_0/sb_axi]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_adr] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_adr_o]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_dat] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_dat_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_sel_o] [get_bd_pins bootrom_wrapper_0/i_wb_sel]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_we] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_we_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_cyc_o] [get_bd_pins bootrom_wrapper_0/i_wb_cyc]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_stb] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_stb_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_dat_i] [get_bd_pins bootrom_wrapper_0/o_wb_rdt]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/o_wb_ack] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_ack_i]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_adr_o] [get_bd_pins syscon_wrapper_0/i_wb_adr]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_stb_o] [get_bd_pins syscon_wrapper_0/i_wb_stb]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_cyc] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_cyc_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_we] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_we_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_sel] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_sel_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_dat] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_dat_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_wb_rdt] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_dat_i]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_ack_i] [get_bd_pins syscon_wrapper_0/o_wb_ack]
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_timer_irq] [get_bd_pins swerv_wrapper_verilog_0/timer_int]
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_nmi_vec] [get_bd_pins swerv_wrapper_verilog_0/nmi_vec]
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_nmi_int] [get_bd_pins swerv_wrapper_verilog_0/nmi_int]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_cyc_o] [get_bd_pins wb_gpio_wrapper_0/wb_cyc_i]
+set_property location {3 1057 295} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {3 1059 289} [get_bd_cells wb_gpio_wrapper_0]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_adr_o] [get_bd_pins wb_gpio_wrapper_0/wb_adr_i]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_dat_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_dat_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_sel_o] [get_bd_pins wb_gpio_wrapper_0/wb_sel_i]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_we_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_we_o]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_stb_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_stb_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_dat_i] [get_bd_pins wb_gpio_wrapper_0/wb_dat_o]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_ack_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_ack_i]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_err_i] [get_bd_pins wb_gpio_wrapper_0/wb_err_o]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_inta_o] [get_bd_pins syscon_wrapper_0/gpio_irq]
+startgroup
+make_bd_pins_external  [get_bd_cells swerv_wrapper_verilog_0]
+make_bd_intf_pins_external  [get_bd_cells swerv_wrapper_verilog_0]
+endgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi2wb_intcon_wrapper_0/clk_i_wrapper]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins bootrom_wrapper_0/i_clk]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins syscon_wrapper_0/i_clk]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins wb_gpio_wrapper_0/wb_clk_i]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi2wb_intcon_wrapper_0/rst_ni_wrapper]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins bootrom_wrapper_0/i_rst]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins syscon_wrapper_0/i_rst]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins wb_gpio_wrapper_0/wb_rst_i]
+save_bd_design
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_ram_axi4]
+endgroup
+set_property name ram [get_bd_intf_ports o_ram_axi4_0]
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/AN]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/Digits_Bits]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins wb_gpio_wrapper_0/bidir]
+endgroup
+set_property name bidir [get_bd_ports bidir_0]
+save_bd_design
+current_bd_design [get_bd_designs design_1swerv_soc]
+close_bd_design [get_bd_designs design_1swerv_soc]
+assign_bd_address [get_bd_addr_segs {ram/Reg }]
+set_property range 128M [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}]
+set_property offset 0x00000000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}]
+assign_bd_address [get_bd_addr_segs {axi2wb_intcon_wrapper_0/i_ifu_axi4/reg0 }]
+assign_bd_address [get_bd_addr_segs {axi2wb_intcon_wrapper_0/i_lsu_axi4/reg0 }]
+assign_bd_address [get_bd_addr_segs {axi2wb_intcon_wrapper_0/i_sb_axi4/reg0 }]
+save_bd_design
+export_ip_user_files -of_objects  [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v] -no_script -reset -force -quiet
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v
+export_ip_user_files -of_objects  [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd] -no_script -reset -force -quiet
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd
+make_wrapper -files [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -top
+add_files -norecurse D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+update_compile_order -fileset sources_1
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/script.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/script.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/i_ram_init_done]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/i_ram_init_error]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1

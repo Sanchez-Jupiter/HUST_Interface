@@ -1,0 +1,435 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Oct 10 08:59:51 2024
+# Process ID: 3388
+# Current directory: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6460 D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.xpr
+# Log file: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/vivado.log
+# Journal file: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 876.867 ; gain = 255.348
+update_compile_order -fileset sources_1
+create_bd_design "swerv_soc"
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+create_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1018.332 ; gain = 75.551
+update_compile_order -fileset sources_1
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd}
+Adding component instance block -- xilinx.com:user:axi2wb_intcon_wrapper:1.0 - axi2wb_intcon_wrapper_0
+Adding component instance block -- xilinx.com:user:swerv_wrapper_verilog:1.0 - swerv_wrapper_verilog_0
+Adding component instance block -- xilinx.com:module_ref:bootrom_wrapper:1.0 - bootrom_wrapper_0
+Adding component instance block -- xilinx.com:user:wb_gpio_wrapper:1.0 - wb_gpio_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:syscon_wrapper:1.0 - syscon_wrapper_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /syscon_wrapper_0/o_timer_irq(intr) and /swerv_wrapper_verilog_0/timer_int(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /wb_gpio_wrapper_0/wb_inta_o(undef) and /syscon_wrapper_0/gpio_irq(intr)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /wb_gpio_wrapper_0/wb_clk_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /wb_gpio_wrapper_0/wb_rst_i(undef)
+Successfully read diagram <design_1swerv_soc> from BD file <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1025.934 ; gain = 7.602
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd}
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi2wb_intcon_wrapper:1.0 axi2wb_intcon_wrapper_0
+endgroup
+export_ip_user_files -of_objects  [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -reset -force -quiet
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+file delete -force D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc
+update_files -from_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v -to_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/design_1swerv_soc_wrapper.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/design_1swerv_soc_wrapper.v' with file 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v'.
+add_files {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/mem_1.init D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/sw/boot_main.mem D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_core.init}
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/mem_1.init' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/sw/boot_main.mem' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_core.init' cannot be added to the project because it already exists in the project, skipping this file
+add_files {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/sync.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/syscon_wrapper.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/registers.svh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_pkg.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/binary_to_gray.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/rvfpga.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/cdc_fifo_gray.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_top.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/counter.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/bscan_tap.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/typedef.svh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/delta_counter.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/clk_gen_nexys.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_cdc.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_core.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/assign.svh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/spill_register.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/gray_to_binary.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/sw/boot_main.vh D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/dpram64.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/bootrom_wrapper.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_intf.sv D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/swervolf_syscon.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v}
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/sync.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/syscon_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/registers.svh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_pkg.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/binary_to_gray.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/rvfpga.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/cdc_fifo_gray.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_top.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/counter.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/bscan_tap.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/typedef.svh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/delta_counter.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/clk_gen_nexys.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_cdc.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/litedram_core.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/assign.svh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/spill_register.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/gray_to_binary.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/sw/boot_main.vh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/dpram64.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/BootROM/bootrom_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/axi_intf.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/SystemController/swervolf_syscon.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v' cannot be added to the project because it already exists in the project, skipping this file
+create_bd_design "swerv_soc"
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi2wb_intcon_wrapper:1.0 axi2wb_intcon_wrapper_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:swerv_wrapper_verilog:1.0 swerv_wrapper_verilog_0
+endgroup
+set_property location {1 48 -72} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {0.5 -13 -105} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -10 -96} [get_bd_cells swerv_wrapper_verilog_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:wb_gpio_wrapper:1.0 wb_gpio_wrapper_0
+endgroup
+set_property location {3.5 1161 169} [get_bd_cells wb_gpio_wrapper_0]
+create_bd_cell -type module -reference bootrom_wrapper bootrom_wrapper_0
+create_bd_cell -type module -reference SevSegDisplays_Controller SevSegDisplays_Contr_0
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'COUNT_MAX' by 20 for port or parameter 'countSelection'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/ip_repo'.
+delete_bd_objs [get_bd_cells SevSegDisplays_Contr_0]
+save_bd_design
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+create_bd_cell -type module -reference syscon_wrapper syscon_wrapper_0
+set_property location {4 1317 480} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {4 1287 614} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {4 1322 208} [get_bd_cells syscon_wrapper_0]
+set_property location {0.5 53 -13} [get_bd_cells swerv_wrapper_verilog_0]
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd}
+open_bd_design {D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+current_bd_design design_1swerv_soc
+set tmpCopyObjs [concat  [get_bd_cells {axi2wb_intcon_wrapper_0 syscon_wrapper_0 bootrom_wrapper_0 swerv_wrapper_verilog_0 wb_gpio_wrapper_0}] [get_bd_intf_ports {ram}] [get_bd_ports {rst_0 i_ram_init_done_0 i_ram_init_error_0 dmi_reg_wr_en_0 dmi_reg_en_0 clk_0 dmi_hard_reset_0 dmi_reg_rdata_0 dmi_reg_wdata_0 bidir Digits_Bits_0 AN_0 extintsrc_req_0 dmi_reg_addr_0}] [get_bd_intf_nets {axi2wb_intcon_wrapper_0_o_ram_axi4 swerv_wrapper_verilog_0_ifu_axi swerv_wrapper_verilog_0_lsu_axi swerv_wrapper_verilog_0_sb_axi}] [get_bd_nets {wb_gpio_wrapper_0_bidir wb_gpio_wrapper_0_wb_err_o axi2wb_intcon_wrapper_0_wb_gpio_cyc_o axi2wb_intcon_wrapper_0_wb_sys_dat_o syscon_wrapper_0_AN rst_0_1 syscon_wrapper_0_o_nmi_int syscon_wrapper_0_o_wb_rdt syscon_wrapper_0_o_wb_ack axi2wb_intcon_wrapper_0_wb_sys_adr_o extintsrc_req_0_1 syscon_wrapper_0_o_nmi_vec dmi_hard_reset_0_1 clk_0_1 wb_gpio_wrapper_0_wb_ack_o axi2wb_intcon_wrapper_0_wb_gpio_dat_o axi2wb_intcon_wrapper_0_wb_rom_adr_o dmi_reg_wdata_0_1 bootrom_wrapper_0_o_wb_rdt axi2wb_intcon_wrapper_0_wb_rom_sel_o axi2wb_intcon_wrapper_0_wb_rom_we_o i_ram_init_done_0_1 axi2wb_intcon_wrapper_0_wb_sys_stb_o dmi_reg_addr_0_1 axi2wb_intcon_wrapper_0_wb_rom_stb_o swerv_wrapper_verilog_0_dmi_reg_rdata wb_gpio_wrapper_0_wb_dat_o axi2wb_intcon_wrapper_0_wb_gpio_stb_o axi2wb_intcon_wrapper_0_wb_gpio_sel_o axi2wb_intcon_wrapper_0_wb_gpio_adr_o axi2wb_intcon_wrapper_0_wb_sys_sel_o axi2wb_intcon_wrapper_0_wb_rom_dat_o i_ram_init_error_0_1 axi2wb_intcon_wrapper_0_wb_gpio_we_o syscon_wrapper_0_Digits_Bits dmi_reg_wr_en_0_1 dmi_reg_en_0_1 axi2wb_intcon_wrapper_0_wb_sys_cyc_o axi2wb_intcon_wrapper_0_wb_rom_cyc_o syscon_wrapper_0_o_timer_irq axi2wb_intcon_wrapper_0_wb_sys_we_o wb_gpio_wrapper_0_wb_inta_o}]]
+current_bd_design swerv_soc
+copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /wb_gpio_wrapper_1/wb_clk_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /wb_gpio_wrapper_1/wb_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /syscon_wrapper_1/o_timer_irq(intr) and /swerv_wrapper_verilog_1/timer_int(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /wb_gpio_wrapper_1/wb_inta_o(undef) and /syscon_wrapper_1/gpio_irq(intr)
+delete_bd_objs [get_bd_cells axi2wb_intcon_wrapper_0]
+delete_bd_objs [get_bd_cells wb_gpio_wrapper_0]
+delete_bd_objs [get_bd_cells syscon_wrapper_0]
+delete_bd_objs [get_bd_cells swerv_wrapper_verilog_0]
+delete_bd_objs [get_bd_cells bootrom_wrapper_0]
+current_bd_design design_1swerv_soc
+set tmpCopyObjs [concat  [get_bd_cells {axi2wb_intcon_wrapper_0 syscon_wrapper_0 bootrom_wrapper_0 swerv_wrapper_verilog_0 wb_gpio_wrapper_0}] [get_bd_intf_ports {ram}] [get_bd_ports {rst_0 i_ram_init_done_0 i_ram_init_error_0 dmi_reg_wr_en_0 dmi_reg_en_0 clk_0 dmi_hard_reset_0 dmi_reg_rdata_0 dmi_reg_wdata_0 bidir Digits_Bits_0 AN_0 extintsrc_req_0 dmi_reg_addr_0}] [get_bd_intf_nets {axi2wb_intcon_wrapper_0_o_ram_axi4 swerv_wrapper_verilog_0_ifu_axi swerv_wrapper_verilog_0_lsu_axi swerv_wrapper_verilog_0_sb_axi}] [get_bd_nets {wb_gpio_wrapper_0_bidir wb_gpio_wrapper_0_wb_err_o axi2wb_intcon_wrapper_0_wb_gpio_cyc_o axi2wb_intcon_wrapper_0_wb_sys_dat_o syscon_wrapper_0_AN rst_0_1 syscon_wrapper_0_o_nmi_int syscon_wrapper_0_o_wb_rdt syscon_wrapper_0_o_wb_ack axi2wb_intcon_wrapper_0_wb_sys_adr_o extintsrc_req_0_1 syscon_wrapper_0_o_nmi_vec dmi_hard_reset_0_1 clk_0_1 wb_gpio_wrapper_0_wb_ack_o axi2wb_intcon_wrapper_0_wb_gpio_dat_o axi2wb_intcon_wrapper_0_wb_rom_adr_o dmi_reg_wdata_0_1 bootrom_wrapper_0_o_wb_rdt axi2wb_intcon_wrapper_0_wb_rom_sel_o axi2wb_intcon_wrapper_0_wb_rom_we_o i_ram_init_done_0_1 axi2wb_intcon_wrapper_0_wb_sys_stb_o dmi_reg_addr_0_1 axi2wb_intcon_wrapper_0_wb_rom_stb_o swerv_wrapper_verilog_0_dmi_reg_rdata wb_gpio_wrapper_0_wb_dat_o axi2wb_intcon_wrapper_0_wb_gpio_stb_o axi2wb_intcon_wrapper_0_wb_gpio_sel_o axi2wb_intcon_wrapper_0_wb_gpio_adr_o axi2wb_intcon_wrapper_0_wb_sys_sel_o axi2wb_intcon_wrapper_0_wb_rom_dat_o i_ram_init_error_0_1 axi2wb_intcon_wrapper_0_wb_gpio_we_o syscon_wrapper_0_Digits_Bits dmi_reg_wr_en_0_1 dmi_reg_en_0_1 axi2wb_intcon_wrapper_0_wb_sys_cyc_o axi2wb_intcon_wrapper_0_wb_rom_cyc_o syscon_wrapper_0_o_timer_irq axi2wb_intcon_wrapper_0_wb_sys_we_o wb_gpio_wrapper_0_wb_inta_o}]]
+current_bd_design swerv_soc
+copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_1(clk) and /wb_gpio_wrapper_0/wb_clk_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_1(rst) and /wb_gpio_wrapper_0/wb_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /syscon_wrapper_0/o_timer_irq(intr) and /swerv_wrapper_verilog_0/timer_int(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /wb_gpio_wrapper_0/wb_inta_o(undef) and /syscon_wrapper_0/gpio_irq(intr)
+undo
+INFO: [Common 17-17] undo 'copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs'
+undo
+INFO: [Common 17-17] undo 'current_bd_design swerv_soc'
+current_bd_design [get_bd_designs swerv_soc]
+undo
+INFO: [Common 17-17] undo 'current_bd_design [get_bd_designs swerv_soc]'
+current_bd_design [get_bd_designs swerv_soc]
+startgroup
+delete_bd_objs [get_bd_intf_nets axi2wb_intcon_wrapper_0_o_ram_axi4] [get_bd_intf_nets swerv_wrapper_verilog_0_ifu_axi] [get_bd_intf_nets swerv_wrapper_verilog_0_lsu_axi] [get_bd_intf_nets swerv_wrapper_verilog_0_sb_axi]
+delete_bd_objs [get_bd_nets wb_gpio_wrapper_0_wb_err_o] [get_bd_nets wb_gpio_wrapper_0_bidir] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_dat_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_cyc_o] [get_bd_nets syscon_wrapper_0_o_wb_rdt] [get_bd_nets syscon_wrapper_0_o_wb_ack] [get_bd_nets syscon_wrapper_0_o_nmi_int] [get_bd_nets syscon_wrapper_0_AN] [get_bd_nets rst_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_adr_o] [get_bd_nets syscon_wrapper_0_o_nmi_vec] [get_bd_nets extintsrc_req_0_1] [get_bd_nets wb_gpio_wrapper_0_wb_ack_o] [get_bd_nets dmi_hard_reset_0_1] [get_bd_nets clk_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_adr_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_dat_o] [get_bd_nets dmi_reg_wdata_0_1] [get_bd_nets bootrom_wrapper_0_o_wb_rdt] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_we_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_sel_o] [get_bd_nets i_ram_init_done_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_stb_o] [get_bd_nets dmi_reg_addr_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_stb_o] [get_bd_nets wb_gpio_wrapper_0_wb_dat_o] [get_bd_nets swerv_wrapper_verilog_0_dmi_reg_rdata] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_sel_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_dat_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_stb_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_sel_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_adr_o] [get_bd_nets i_ram_init_error_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_gpio_we_o] [get_bd_nets syscon_wrapper_0_Digits_Bits] [get_bd_nets dmi_reg_wr_en_0_1] [get_bd_nets dmi_reg_en_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_cyc_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_rom_cyc_o] [get_bd_nets syscon_wrapper_0_o_timer_irq] [get_bd_nets axi2wb_intcon_wrapper_0_wb_sys_we_o] [get_bd_nets wb_gpio_wrapper_0_wb_inta_o]
+delete_bd_objs [get_bd_intf_ports ram]
+delete_bd_objs [get_bd_ports i_ram_init_done_0] [get_bd_ports i_ram_init_error_0] [get_bd_ports rst_0] [get_bd_ports dmi_reg_wr_en_0] [get_bd_ports dmi_reg_en_0] [get_bd_ports clk_0] [get_bd_ports dmi_hard_reset_0] [get_bd_ports dmi_reg_rdata_0] [get_bd_ports dmi_reg_wdata_0] [get_bd_ports bidir] [get_bd_ports Digits_Bits_0] [get_bd_ports AN_0] [get_bd_ports extintsrc_req_0] [get_bd_ports dmi_reg_addr_0]
+delete_bd_objs [get_bd_cells axi2wb_intcon_wrapper_1] [get_bd_cells syscon_wrapper_1] [get_bd_cells bootrom_wrapper_1] [get_bd_cells swerv_wrapper_verilog_1] [get_bd_cells wb_gpio_wrapper_1]
+endgroup
+current_bd_design design_1swerv_soc
+set tmpCopyObjs [concat  [get_bd_cells {axi2wb_intcon_wrapper_0 syscon_wrapper_0 bootrom_wrapper_0 swerv_wrapper_verilog_0 wb_gpio_wrapper_0}] [get_bd_intf_ports {ram}] [get_bd_ports {rst_0 i_ram_init_done_0 i_ram_init_error_0 dmi_reg_wr_en_0 dmi_reg_en_0 clk_0 dmi_hard_reset_0 dmi_reg_rdata_0 dmi_reg_wdata_0 bidir Digits_Bits_0 AN_0 extintsrc_req_0 dmi_reg_addr_0}] [get_bd_intf_nets {axi2wb_intcon_wrapper_0_o_ram_axi4 swerv_wrapper_verilog_0_ifu_axi swerv_wrapper_verilog_0_lsu_axi swerv_wrapper_verilog_0_sb_axi}] [get_bd_nets {wb_gpio_wrapper_0_bidir wb_gpio_wrapper_0_wb_err_o axi2wb_intcon_wrapper_0_wb_gpio_cyc_o axi2wb_intcon_wrapper_0_wb_sys_dat_o syscon_wrapper_0_AN rst_0_1 syscon_wrapper_0_o_nmi_int syscon_wrapper_0_o_wb_rdt syscon_wrapper_0_o_wb_ack axi2wb_intcon_wrapper_0_wb_sys_adr_o extintsrc_req_0_1 syscon_wrapper_0_o_nmi_vec dmi_hard_reset_0_1 clk_0_1 wb_gpio_wrapper_0_wb_ack_o axi2wb_intcon_wrapper_0_wb_gpio_dat_o axi2wb_intcon_wrapper_0_wb_rom_adr_o dmi_reg_wdata_0_1 bootrom_wrapper_0_o_wb_rdt axi2wb_intcon_wrapper_0_wb_rom_sel_o axi2wb_intcon_wrapper_0_wb_rom_we_o i_ram_init_done_0_1 axi2wb_intcon_wrapper_0_wb_sys_stb_o dmi_reg_addr_0_1 axi2wb_intcon_wrapper_0_wb_rom_stb_o swerv_wrapper_verilog_0_dmi_reg_rdata wb_gpio_wrapper_0_wb_dat_o axi2wb_intcon_wrapper_0_wb_gpio_stb_o axi2wb_intcon_wrapper_0_wb_gpio_sel_o axi2wb_intcon_wrapper_0_wb_gpio_adr_o axi2wb_intcon_wrapper_0_wb_sys_sel_o axi2wb_intcon_wrapper_0_wb_rom_dat_o i_ram_init_error_0_1 axi2wb_intcon_wrapper_0_wb_gpio_we_o syscon_wrapper_0_Digits_Bits dmi_reg_wr_en_0_1 dmi_reg_en_0_1 axi2wb_intcon_wrapper_0_wb_sys_cyc_o axi2wb_intcon_wrapper_0_wb_rom_cyc_o syscon_wrapper_0_o_timer_irq axi2wb_intcon_wrapper_0_wb_sys_we_o wb_gpio_wrapper_0_wb_inta_o}]]
+current_bd_design swerv_soc
+copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /wb_gpio_wrapper_0/wb_clk_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /wb_gpio_wrapper_0/wb_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /syscon_wrapper_0/o_timer_irq(intr) and /swerv_wrapper_verilog_0/timer_int(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /wb_gpio_wrapper_0/wb_inta_o(undef) and /syscon_wrapper_0/gpio_irq(intr)
+    undo
+INFO: [Common 17-17] undo 'copy_bd_objs -from_design design_1swerv_soc / $tmpCopyObjs'
+undo
+INFO: [Common 17-17] undo 'current_bd_design swerv_soc'
+current_bd_design [get_bd_designs swerv_soc]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi2wb_intcon_wrapper:1.0 axi2wb_intcon_wrapper_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:swerv_wrapper_verilog:1.0 swerv_wrapper_verilog_0
+endgroup
+set_property location {1 106 -167} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {0.5 -35 -177} [get_bd_cells swerv_wrapper_verilog_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:wb_gpio_wrapper:1.0 wb_gpio_wrapper_0
+endgroup
+set_property location {2.5 1256 -269} [get_bd_cells swerv_wrapper_verilog_0]
+create_bd_cell -type module -reference bootrom_wrapper bootrom_wrapper_0
+set_property location {3 940 -334} [get_bd_cells bootrom_wrapper_0]
+set_property location {3.5 1061 11} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {4 1049 356} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {0.5 -118 -89} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {4 969 -352} [get_bd_cells bootrom_wrapper_0]
+set_property location {3 1009 14} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {3 1082 307} [get_bd_cells wb_gpio_wrapper_0]
+create_bd_cell -type module -reference syscon_wrapper syscon_wrapper_0
+set_property location {4 1059 -67} [get_bd_cells syscon_wrapper_0]
+set_property location {1 -138 -130} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -132 -152} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -128 -150} [get_bd_cells swerv_wrapper_verilog_0]
+set_property location {1 -132 -183} [get_bd_cells swerv_wrapper_verilog_0]
+connect_bd_intf_net [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_ifu_axi4] [get_bd_intf_pins swerv_wrapper_verilog_0/ifu_axi]
+connect_bd_intf_net [get_bd_intf_pins swerv_wrapper_verilog_0/lsu_axi] [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_lsu_axi4]
+connect_bd_intf_net [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_sb_axi4] [get_bd_intf_pins swerv_wrapper_verilog_0/sb_axi]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_adr] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_adr_o]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_dat] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_dat_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_sel_o] [get_bd_pins bootrom_wrapper_0/i_wb_sel]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_we] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_we_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_cyc_o] [get_bd_pins bootrom_wrapper_0/i_wb_cyc]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/i_wb_stb] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_stb_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_dat_i] [get_bd_pins bootrom_wrapper_0/o_wb_rdt]
+connect_bd_net [get_bd_pins bootrom_wrapper_0/o_wb_ack] [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_ack_i]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_adr_o] [get_bd_pins syscon_wrapper_0/i_wb_adr]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_stb_o] [get_bd_pins syscon_wrapper_0/i_wb_stb]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_cyc] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_cyc_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_we] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_we_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_sel] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_sel_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/i_wb_dat] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_dat_o]
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_wb_rdt] [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_dat_i]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_ack_i] [get_bd_pins syscon_wrapper_0/o_wb_ack]
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_timer_irq] [get_bd_pins swerv_wrapper_verilog_0/timer_int]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /syscon_wrapper_0/o_timer_irq(intr) and /swerv_wrapper_verilog_0/timer_int(undef)
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_nmi_vec] [get_bd_pins swerv_wrapper_verilog_0/nmi_vec]
+connect_bd_net [get_bd_pins syscon_wrapper_0/o_nmi_int] [get_bd_pins swerv_wrapper_verilog_0/nmi_int]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_cyc_o] [get_bd_pins wb_gpio_wrapper_0/wb_cyc_i]
+set_property location {3 1057 295} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {3 1059 289} [get_bd_cells wb_gpio_wrapper_0]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_adr_o] [get_bd_pins wb_gpio_wrapper_0/wb_adr_i]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_dat_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_dat_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_sel_o] [get_bd_pins wb_gpio_wrapper_0/wb_sel_i]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_we_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_we_o]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_stb_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_stb_o]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_dat_i] [get_bd_pins wb_gpio_wrapper_0/wb_dat_o]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_ack_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_ack_i]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_err_i] [get_bd_pins wb_gpio_wrapper_0/wb_err_o]
+connect_bd_net [get_bd_pins wb_gpio_wrapper_0/wb_inta_o] [get_bd_pins syscon_wrapper_0/gpio_irq]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /wb_gpio_wrapper_0/wb_inta_o(undef) and /syscon_wrapper_0/gpio_irq(intr)
+startgroup
+make_bd_pins_external  [get_bd_cells swerv_wrapper_verilog_0]
+make_bd_intf_pins_external  [get_bd_cells swerv_wrapper_verilog_0]
+endgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi2wb_intcon_wrapper_0/clk_i_wrapper]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins bootrom_wrapper_0/i_clk]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins syscon_wrapper_0/i_clk]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins wb_gpio_wrapper_0/wb_clk_i]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /wb_gpio_wrapper_0/wb_clk_i(undef)
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi2wb_intcon_wrapper_0/rst_ni_wrapper]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins bootrom_wrapper_0/i_rst]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins syscon_wrapper_0/i_rst]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins wb_gpio_wrapper_0/wb_rst_i]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /wb_gpio_wrapper_0/wb_rst_i(undef)
+save_bd_design
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_ram_axi4]
+endgroup
+set_property name ram [get_bd_intf_ports o_ram_axi4_0]
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/AN]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/Digits_Bits]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins wb_gpio_wrapper_0/bidir]
+endgroup
+set_property name bidir [get_bd_ports bidir_0]
+save_bd_design
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+current_bd_design [get_bd_designs design_1swerv_soc]
+close_bd_design [get_bd_designs design_1swerv_soc]
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/ui/bd_22943a5d.ui> 
+assign_bd_address [get_bd_addr_segs {ram/Reg }]
+Slave segment </ram/Reg> is being mapped into address space </axi2wb_intcon_wrapper_0/o_ram_axi4> at <0x44A0_0000 [ 64K ]>
+set_property range 128M [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}]
+set_property offset 0x00000000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}]
+assign_bd_address [get_bd_addr_segs {axi2wb_intcon_wrapper_0/i_ifu_axi4/reg0 }]
+Slave segment </axi2wb_intcon_wrapper_0/i_ifu_axi4/reg0> is being mapped into address space </swerv_wrapper_verilog_0/ifu_axi> at <0x0_0000_0000 [ 4G ]>
+assign_bd_address [get_bd_addr_segs {axi2wb_intcon_wrapper_0/i_lsu_axi4/reg0 }]
+Slave segment </axi2wb_intcon_wrapper_0/i_lsu_axi4/reg0> is being mapped into address space </swerv_wrapper_verilog_0/lsu_axi> at <0x0_0000_0000 [ 4G ]>
+assign_bd_address [get_bd_addr_segs {axi2wb_intcon_wrapper_0/i_sb_axi4/reg0 }]
+Slave segment </axi2wb_intcon_wrapper_0/i_sb_axi4/reg0> is being mapped into address space </swerv_wrapper_verilog_0/sb_axi> at <0x0_0000_0000 [ 4G ]>
+save_bd_design
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+export_ip_user_files -of_objects  [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v] -no_script -reset -force -quiet
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v
+WARNING: [Vivado 12-818] No files matched 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/hdl/swerv_soc_wrapper.v'
+export_ip_user_files -of_objects  [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd] -no_script -reset -force -quiet
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd
+remove_files  D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd
+WARNING: [Vivado 12-818] No files matched 'D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/design_1swerv_soc/design_1swerv_soc.bd'
+make_wrapper -files [get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -top
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+/syscon_wrapper_0/i_ram_init_done
+/syscon_wrapper_0/i_ram_init_error
+
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/sim/swerv_soc.v
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/ip_repo'.
+add_files -norecurse D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+update_compile_order -fileset sources_1
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/script.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/script.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+/syscon_wrapper_0/i_ram_init_done
+/syscon_wrapper_0/i_ram_init_error
+
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/sim/swerv_soc.v
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi2wb_intcon_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block swerv_wrapper_verilog_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wb_gpio_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bootrom_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block syscon_wrapper_0 .
+Exporting to file D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Block Design Tcl file D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl
+Generated Hardware Definition File D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Thu Oct 10 09:50:17 2024] Launched swerv_soc_axi2wb_intcon_wrapper_0_4_synth_1, swerv_soc_swerv_wrapper_verilog_0_4_synth_1, swerv_soc_bootrom_wrapper_0_4_synth_1, swerv_soc_syscon_wrapper_0_4_synth_1, swerv_soc_wb_gpio_wrapper_0_4_synth_1, synth_1...
+Run output will be captured here:
+swerv_soc_axi2wb_intcon_wrapper_0_4_synth_1: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/swerv_soc_axi2wb_intcon_wrapper_0_4_synth_1/runme.log
+swerv_soc_swerv_wrapper_verilog_0_4_synth_1: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/swerv_soc_swerv_wrapper_verilog_0_4_synth_1/runme.log
+swerv_soc_bootrom_wrapper_0_4_synth_1: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/swerv_soc_bootrom_wrapper_0_4_synth_1/runme.log
+swerv_soc_syscon_wrapper_0_4_synth_1: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/swerv_soc_syscon_wrapper_0_4_synth_1/runme.log
+swerv_soc_wb_gpio_wrapper_0_4_synth_1: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/swerv_soc_wb_gpio_wrapper_0_4_synth_1/runme.log
+synth_1: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/synth_1/runme.log
+[Thu Oct 10 09:50:17 2024] Launched impl_1...
+Run output will be captured here: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1344.164 ; gain = 17.832
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/i_ram_init_done]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins syscon_wrapper_0/i_ram_init_error]
+endgroup
+save_bd_design
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+Wrote  : <D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\RVfpga_SoC\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/sim/swerv_soc.v
+VHDL Output written to : D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi2wb_intcon_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block swerv_wrapper_verilog_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wb_gpio_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bootrom_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block syscon_wrapper_0 .
+Exporting to file D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Block Design Tcl file D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl
+Generated Hardware Definition File D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+[Thu Oct 10 10:07:07 2024] Launched synth_1...
+Run output will be captured here: D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/RVfpga_SoC/RVfpga_SoC.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1424.520 ; gain = 5.121
+reset_run synth_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 12:26:49 2024...
