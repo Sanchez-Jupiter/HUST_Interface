@@ -2,6 +2,6 @@ the final project of the experimant of Interface Technology
 
 we designed a traffic light system
 
-redGreenLight中是工程文件
+redGreenLight is the engineering document
 
-RVfpga_SoC_FINAL是硬件设计
+RVfpga_SoC_FINAL is the hardware designing
